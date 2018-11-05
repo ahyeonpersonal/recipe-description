@@ -1,0 +1,12 @@
+ # Displaying recipeName in console panel instead 'working'
+ 
+ 5. give name as "recipeName"
+ Form.js #5) 
+ 
+ 6. get RecipeName from Form.js
+ App.js #11)
+ const recipeName = e.target.elements.recipeName.value;
+ 
+ 7. Display recipeName isntead 'working' in console panel
+ App.js #15)
+ console.log(recipeName);
