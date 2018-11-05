@@ -1,0 +1,6 @@
+Displaying 'working' in console log
+
+1. Creating getRecipe
+2. give permission to Form.js
+3. get access to getRecipe in Form.js using props
+4. e.preventDefault();
