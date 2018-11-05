@@ -4,8 +4,9 @@ import Form from "./components/Form";
 
 class App extends Component {
   
+  //1. Creating getRecipe
   getRecipe = (e) =>{
-    e.preventDefault();
+    e.preventDefault(); //4. prevent full page refreshment
     console.log("Working!!!");
   }
   
@@ -16,7 +17,7 @@ class App extends Component {
         <header className="App-header">
           Recipe Search
         </header>
-        <Form getRecipe={this.getRecipe}/>
+        <Form getRecipe={this.getRecipe}/>   {/* 2. give permission to Form.js*/}
       </div>
     );
   }
