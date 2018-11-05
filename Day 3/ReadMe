@@ -1,0 +1,18 @@
+#Set API Key and calling API data
+https://www.food2fork.com/about/api
+
+8. input API Key 
+App.js #6)
+const API_KEY = "a6fa2d4513b2118e543ef7b684a8de4d";
+
+9. create api_call to call API Link
+App.js #17)
+const api_call = await fetch(`https://www.food2fork.com/api/search?key=${API_KEY}&q=shredded%20chicken`);
+
+10. make api data to redable json file
+App.js #19)
+const data = await api_call.json();
+
+11. get data in console panel
+App.js #21)
+console.log(data);
