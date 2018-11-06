@@ -8,6 +8,8 @@ const API_KEY = "a6fa2d4513b2118e543ef7b684a8de4d";
 class App extends Component {
   
   //12. what we need from array 
+  //set up array to store whatever we get back from the API
+  //First thing to do is set up empty recipes array
   state = {
     recipes : []
   }
@@ -25,8 +27,18 @@ class App extends Component {
     //console.log(data.recipes);
 
    this.setState({recipes:data.recipes});
-    // 13.'recipes.recipes' array is actually what I need
+    
+    //13. Fill recipes []  array with data from API : using built in set state method
+    //this.setState({recipes : data})
+    
+    //15. we want to specificaly want to get data > recepies array so update recipes : data.recipes
+    this.setState({recipes : data.recipes});
+
+    //14. now console log state( whicfh is recipes array )
     console.log(this.state.recipes);
+    
+
+    //console.log(this.state.recipes);
 
     //console.log("Working!!!");
     //7. Display recipeName instead 'working' in Console panel
@@ -43,7 +55,7 @@ class App extends Component {
         <Form getRecipe={this.getRecipe} />
         
         {/* 
-        14. Print out recipe titles on the screen using map method
+        16. Print out recipe titles on the screen using map method
 
         Map : it allows you to go through each element inside of an array
         and then you can manipulate it, change it, and anything you wnat to do with it 
@@ -51,6 +63,7 @@ class App extends Component {
         */}
         {this.state.recipes.map( (recipe) =>{
           return <p key={recipe.recipe_id}> {recipe.title}</p>
+          // 17. Wraning : input key when using map method
         } )}
       </div>
     );
