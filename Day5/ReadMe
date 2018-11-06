@@ -1,0 +1,17 @@
+18. inject {recipeName} in API link
+App.js #23)
+const api_call = await fetch(`https://www.food2fork.com/api/search?key=${API_KEY}&q=${recipeName}`);
+
+19. displaying recipe image, and recipe title 
+App.js #67-72)
+return(
+  <div>
+    <img src-{recipe.image_url alt=""/>
+    <p>{recipe.title}</p>
+  </div>
+)
+
+20. Warning : Key should be in the most parent element
+App.js #68)
+<div key={recipe.recipe_id}>
+
