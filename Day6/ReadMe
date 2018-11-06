@@ -1,0 +1,11 @@
+#Create Recipes.js file
+21. Cut out 16,17,19,20 and give Recipe permission to access recipes state
+App.js
+
+22. Give recipes state-recipes access by props
+Recipes.js #4)
+const REcipes = props =>();
+
+23.attach 16.17 19.20 and edit them
+Recipes.js #7-15)
+replace 'this' to 'props'
