@@ -1,0 +1,29 @@
+12. set what we need from array
+App.js #11)
+
+state = {
+recipes : []
+}
+
+13. displaying what we actually need (this.state.recipes) in console log
+App.js #29)
+console.log(this.state.recipes)
+
+14.Print out recipe lists on the App screen using Map method
+Map : it alloyws you to go through each element inside of an array.
+      and then you can manipulate it, change it and anything you want to do with it
+      It's like foreach method.
+      
+ App.js #52)
+ {this.state.recipes.map( (recipe) => {
+    return <p> {recipe.titles} </p>
+   }
+ )};
+      
+ 
+ 15. Warning : Map method requires 'key' to each of elements
+ App.js #53)
+ <p key={recipe.recipe_id}> {recipe.title} </o>
+ 
+ 
+  
